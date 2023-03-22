@@ -1,18 +1,10 @@
-
-
-export default function Destructure({}) {
-    const props = {
-        name: "Arthur Bernier",
-        age: 35,
-        website: "deeperThanCode.com"
-    }
+export default function Destructure({ name, age, website }) {
 
     return (
-   <Destructure {...props} />
+        <div>
+            <h1>{name}</h1>
+            <h2>{age}</h2>
+            <h2>{website}</h2>
+        </div>
     )
-
-
-
-
-  
 }
